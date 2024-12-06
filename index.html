@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>🎭 Générateur de Memes Horrible 🎭</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-chaos">
+        <h1 class="titre-dansant">🎨 GÉNÉRATEUR DE MEMES HORRIBLE 🎨</h1>
+        
+        <div class="meme-generator">
+            <input type="text" id="texte-haut" placeholder="Texte du haut" class="input-fou">
+            <input type="text" id="texte-bas" placeholder="Texte du bas" class="input-fou">
+            
+            <select id="choix-image" class="select-rainbow">
+                <option value="doge">Much Wow Doge</option>
+                <option value="cat">Chat Grumpy</option>
+                <option value="fine">This is Fine Dog</option>
+                <option value="drake">Drake Hotline Bling</option>
+                <option value="distracted">Boyfriend Distracted</option>
+                <option value="disaster-girl">Disaster Girl</option>
+                <option value="success">Success Kid</option>
+                <option value="aliens">Ancient Aliens</option>
+                <option value="shut-up-money">Shut Up And Take My Money</option>
+                <option value="one-does-not">One Does Not Simply</option>
+                <option value="y-u-no">Y U NO</option>
+            </select>
+
+            <select id="choix-effet" class="select-rainbow">
+                <option value="normal">Normal</option>
+                <option value="blur">Flou</option>
+                <option value="hue-rotate">Couleurs Inversées</option>
+                <option value="invert">Négatif</option>
+                <option value="sepia">Sépia</option>
+                <option value="saturate">Ultra Saturé</option>
+                <option value="grayscale">Noir et Blanc</option>
+            </select>
+
+            <div class="controles-bonus">
+                <input type="range" id="rotation" min="0" max="360" value="0" class="input-fou">
+                <button id="btn-confetti" class="bouton-bonus">CONFETTI !!</button>
+                <button id="btn-shake" class="bouton-bonus">SHAKE !!</button>
+            </div>
+
+            <div id="bouton-fou" onclick="genererMeme()">
+                GÉNÉRER LE MEME !!!
+            </div>
+        </div>
+
+        <div id="resultat-meme" class="meme-container">
+            <img id="meme-image" src="" alt="Votre meme">
+            <div id="texte-haut-meme" class="meme-texte"></div>
+            <div id="texte-bas-meme" class="meme-texte"></div>
+        </div>
+
+        <div id="curseur-troll"></div>
+
+        <marquee id="texte-defilant">
+            🚀 WOW SUCH MEME! VERY GENERATE! MUCH CREATIVE! 🚀
+        </marquee>
+
+        <div id="popup-surprise" class="cache">
+            MEME GÉNÉRÉ! 🎈
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
